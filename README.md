@@ -1,6 +1,6 @@
 # Smartly.ai node.js client
 
-It's a nodejs client for Smartly.ai; it simplify calls to the api.
+It's a node.js client for Smartly.ai; it simplifies calls to the api.
 
 Sample use:
 
