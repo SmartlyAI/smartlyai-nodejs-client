@@ -18,7 +18,7 @@ dialog.init({
   console.log(data)
 )
 .catch(err => {
-  error.log(err.message)
+  console.error(err.message)
 })
 ```
 
