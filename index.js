@@ -1,8 +1,8 @@
 'use strict'
 
 const rpn = require('request-promise-native')
-const AUTH_URI = 'https://auth.smartly.ai/api/oauth/token/'
-const DIALOG_URI = 'https://blue.smartly.ai/api/dialog/'
+const AUTH_URI = 'https://apis.smartly.ai/api/auth/oauth/token'
+const DIALOG_URI = 'https://apis.smartly.ai/api/dialog/'
 const NEW_SESSION_EV = 'NEW_DIALOG_SESSION'
 const NEW_INPUT_EV = 'NEW_INPUT'
 const PLATFORM = 'smartlyai-nodejs-client'
