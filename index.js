@@ -5,7 +5,7 @@ const AUTH_URI = 'https://apis.smartly.ai/api/auth/oauth/token'
 const DIALOG_URI = 'https://apis.smartly.ai/api/dialog/'
 const NEW_SESSION_EV = 'NEW_DIALOG_SESSION'
 const NEW_INPUT_EV = 'NEW_INPUT'
-const PLATFORM = 'smartlyai-nodejs-client'
+const PLATFORM = 'api'
 
 class Dialog {
   init({ grant_type='password', password, username, client_id, client_secret }) {
