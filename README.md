@@ -5,15 +5,13 @@ It's a node.js client for Smartly.ai; it simplifies calls to the api.
 Sample use:
 
 ```javascript
-const dialog = new Dialog()
-dialog.init({
+const dialog = new Dialog({
   ...
 })
-.then(() =>
-  dialog.newSession({
-    ...
-  })
-)
+
+dialog.newSession({
+...
+})
 .then(data =>
   console.log(data)
 )
@@ -22,6 +20,6 @@ dialog.init({
 })
 ```
 
-You first have to call `init` to authenticate, then you can call `newSession` or `newInput`; the first create a new session (i.e. goes back to the `Welcome State`) while the second simulates user input (e.g. "Hello there.").
+You must first pass the `token` to the constructor to authenticate, then you can call `newSession` or `newInput`; the first create a new session (i.e. goes back to the `Welcome State`) while the second simulates user input (e.g. "Hello there.").
 
-The three methods return native promises.
+The two methods return native promises.
