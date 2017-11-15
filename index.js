@@ -16,7 +16,6 @@ class Dialog {
     if (this.token === undefined) {
       return Promise.reject({ message: 'Dialog not initialized.' })
     }
-    console.log(this.token)
     return rpn({
       method: 'POST',
       uri: DIALOG_URI,
