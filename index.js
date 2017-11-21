@@ -45,4 +45,23 @@ class Dialog {
   }
 }
 
-module.exports = Dialog
+/**
+ * Create an smartly.ai dialog.
+ *
+ * @param {string} clientAccessToken Access token. You can get from your smartly account
+ * @return {Dialog}                  [description]
+ */
+function createDialogObj(clientAccessToken) {
+    if (typeof clientAccessToken === "string") {
+        return new Dialog({token:clientAccessToken});
+    } else {
+        throw new Error('Token\'s param typeof must be a string.');
+    }
+}
+
+/**
+ * Module exports.
+ * @public
+ */
+
+exports = module.exports = createDialogObj
