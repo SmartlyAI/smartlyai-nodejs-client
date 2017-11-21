@@ -2,18 +2,30 @@
 
 It's a node.js client for Smartly.ai; it simplifies calls to the api.
 
+* [Installation](#installation)
+* [Usage](#usage)
+
+# Installation
+
+* Install [Node.js](https://nodejs.org/)
+* Install Smartly.ai SDK with `npm`:
+```shell
+npm install smartlyai
+```
+
+# Usage
+
 Sample use:
 
+* Create `main.js` file with the following code:
 ```javascript
-const dialog = new Dialog()
-dialog.init({
-  ...
+var smartlyai = require('smartlyai');
+
+var dialog = smartlyai("<your client access token>");
+
+dialog.newSession({
+...
 })
-.then(() =>
-  dialog.newSession({
-    ...
-  })
-)
 .then(data =>
   console.log(data)
 )
@@ -21,7 +33,11 @@ dialog.init({
   console.error(err.message)
 })
 ```
+* Run following command.
+```shell
+node main.js
+```
 
-You first have to call `init` to authenticate, then you can call `newSession` or `newInput`; the first create a new session (i.e. goes back to the `Welcome State`) while the second simulates user input (e.g. "Hello there.").
+You must first pass the `token` to the smartlyai module, then you can call `newSession` or `newInput`; the first create a new session (i.e. goes back to the `Welcome State`) while the second simulates user input (e.g. "Hello there.").
 
-The three methods return native promises.
+The two methods return native promises.
