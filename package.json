@@ -1,13 +1,28 @@
 {
   "name": "smartlyai",
-  "version": "0.1.0",
-  "description": "",
+  "version": "1.0.0",
+  "description": "Node.js SDK for smartly.ai dialog",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:SmartlyAI/smartlyai-nodejs-client.git"
+  },
+  "keywords": [
+    "smartlyai",
+    "NLU",
+    "dialog",
+    "bot",
+    "assistant"
+  ],
+  "author": "support@smartly.ai",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SmartlyAI/smartlyai-nodejs-client/issues"
+  },
+  "homepage": "https://github.com/SmartlyAI/smartlyai-nodejs-client#README",
   "dependencies": {
     "request": "^2.81.0",
     "request-promise-native": "^1.0.4"
